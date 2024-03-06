@@ -5,12 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dictionary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1000">
+        Title="MainWindow" Height="700" Width="1000"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Name="lbl1" Content="Please first Login" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,205,0,0"/>
-        <Label Name="lbl2" Content="Username:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="275,0,0,0"/>
-        <TextBox Name="txt1" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="35" Padding="5, 2.5, 2.5, 0"/>
-        <Label Name="lbl3" Content="Password:" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="281,384,0,0"/>
-        <PasswordBox Name="pass1" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="35" Margin="0,384,0,0" Padding="5, 2.5, 2.5, 0"/>
+        
     </Grid>
 </Window>
