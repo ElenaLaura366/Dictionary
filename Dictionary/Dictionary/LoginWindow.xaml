@@ -13,7 +13,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Partea de Sign In -->
+        <!-- Log In -->
         <Border Background="White" Grid.Column="0">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
                 <TextBlock Text="Sign in" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
@@ -21,7 +21,7 @@
                 <TextBox Name="txtUsername" Margin="0,5" Padding="5" FontSize="16"/>
                 <Label Content="Password:" Target="{Binding ElementName=passPassword}" FontSize="16"/>
                 <PasswordBox Name="passPassword" Margin="0,5" Padding="5" FontSize="16"/>
-                <Button Content="SIGN IN" Margin="0,20,0,0" Width="130" Height="40">
+                <Button Content="LOGIN" Click="LoginButton_Click" Margin="0,20,0,0" Width="130" Height="40">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>
@@ -45,12 +45,12 @@
             </StackPanel>
         </Border>
 
-        <!-- Partea de Sign Up -->
+        <!-- Register -->
         <Border Background="#0047AB" Grid.Column="1">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
                 <TextBlock Text="Hello, Friend!" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
                 <TextBlock Text="Enter your personal details" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,20" Foreground="White" FontSize="16"/>
-                <Button Content="SIGN IN" Margin="0,20,0,0" Width="130" Height="40">
+                <Button Content="REGISTER" Margin="0,20,0,0" Width="130" Height="40" Click="RegisterButton_Click">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="White"/>
