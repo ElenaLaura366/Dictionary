@@ -17,7 +17,31 @@
             <RowDefinition Height="3*"/>
         </Grid.RowDefinitions>
         <Border Background="White" Grid.Row="0" Grid.ColumnSpan="3">
-            <TextBlock Text="Add New Word to Dictionary" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+            <Grid>
+                <TextBlock Text="Add New Word to Dictionary" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+                <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Back_Click"
+                Panel.ZIndex="1">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="#0047AB"/>
+                            <Setter Property="BorderBrush" Value="#0047AB"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>
         </Border>
         <Border Background="White" Grid.Row="1" Grid.Column="0">
             <StackPanel HorizontalAlignment="Center" Width="300" Margin="0,90">

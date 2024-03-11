@@ -4,5 +4,23 @@
     "Category": "Animal",
     "Description": "Animal cu 4 piciore, cel mai bun prieten al omului",
     "ImageName": "default.png"
+  },
+  {
+    "Word": "Pisica",
+    "Category": "Animal",
+    "Description": "Animal cu 4 pisioare, domestic, cu mustati",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Portocala",
+    "Category": "Fructe",
+    "Description": "Bogat in vitamina D si este denumit dupa o culoare",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Girafa",
+    "Category": "Animal",
+    "Description": "Animal cu gatul foarte lung",
+    "ImageName": "default.png"
   }
 ]

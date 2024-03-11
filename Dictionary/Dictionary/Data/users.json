@@ -4,6 +4,11 @@
       "username": "Laura",
       "password": "Laura",
       "isAdmin": true
+    },
+    {
+      "username": "David",
+      "password": "asas",
+      "isAdmin": false
     }
   ]
 }

@@ -17,11 +17,25 @@ namespace Dictionary
             addWordWindow.Show();
             this.Close();
         }
+        
+        private void PlayButton_Click(object sender, RoutedEventArgs e)
+        {
+            PlayWindow playWindow = new PlayWindow();
+            playWindow.Show();
+            this.Close();
+        }
 
         private void LogOutButton_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
+            this.Close();
+        }
+
+        private void SearchWordButton_Click(object sender, RoutedEventArgs e)
+        {
+            SearchWordWindow searchWordWindow = new SearchWordWindow();
+            searchWordWindow.Show();
             this.Close();
         }
 

@@ -149,5 +149,12 @@ namespace Dictionary
                 lstCategories.Items.Add(new ListBoxItem { Content = category });
             }
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
+        }
     }
 }

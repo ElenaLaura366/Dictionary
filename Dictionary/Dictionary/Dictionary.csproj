@@ -70,6 +70,9 @@
     <Compile Include="SearchWordWindow.xaml.cs">
       <DependentUpon>SearchWordWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WordDetailsWindow.xaml.cs">
+      <DependentUpon>WordDetailsWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddWordWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -102,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SearchWordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WordDetailsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
