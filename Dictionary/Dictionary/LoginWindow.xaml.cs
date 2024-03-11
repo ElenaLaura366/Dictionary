@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.IO;
+using System;
 
 namespace Dictionary
 {
@@ -18,9 +19,16 @@ namespace Dictionary
             registerWindow.Show();
             this.Close();
         }
+        private string GetFilePath()
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory; // Acesta este directorul bin\Debug sau bin\Release
+            string relativePath = @"..\..\Data\users.json"; // Ajustează aceasta conform structurii proiectului tău
+            string fullPath = Path.GetFullPath(Path.Combine(baseDirectory, relativePath));
+            return fullPath;
+        }
         private List<User> ReadUsersFromFile()
         {
-            string filePath = "users.json";
+            string filePath = GetFilePath();
             if (!File.Exists(filePath))
             {
                 return new List<User>();
@@ -28,8 +36,9 @@ namespace Dictionary
 
             string json = File.ReadAllText(filePath);
             var users = JsonConvert.DeserializeObject<UsersList>(json);
-            return users.users;
+            return users?.users ?? new List<User>();
         }
+
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             string username = txtUsername.Text;
@@ -41,6 +50,8 @@ namespace Dictionary
             if (user != null)
             {
                 MessageBox.Show("Login successful!");
+                // Presupunând că ai o logică pentru setarea statutului de administrator al utilizatorului curent în MainWindow
+                MainWindow.IsUserAdmin = user.isAdmin;
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();
@@ -50,6 +61,5 @@ namespace Dictionary
                 MessageBox.Show("Invalid username or password.");
             }
         }
-
     }
 }

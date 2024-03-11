@@ -20,6 +20,14 @@ namespace Dictionary
             loginWindow.Show();
             this.Close();
         }
+        private string GetFilePath()
+        {
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory; // Acesta este directorul bin\Debug sau bin\Release
+            string relativePath = @"..\..\Data\users.json"; // Ajustează aceasta conform structurii proiectului tău
+            string fullPath = Path.GetFullPath(Path.Combine(baseDirectory, relativePath));
+            return fullPath;
+        }
+
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             string username = txtUsername.Text;
@@ -39,7 +47,7 @@ namespace Dictionary
                 return;
             }
 
-            usersList.Add(new User { username = username, password = password });
+            usersList.Add(new User { username = username, password = password, isAdmin = false });
             WriteUsersToFile(usersList);
 
             MessageBox.Show("User registered successfully!");
@@ -47,7 +55,7 @@ namespace Dictionary
 
         private List<User> ReadUsersFromFile()
         {
-            string filePath = "users.json";
+            string filePath = GetFilePath();
             if (!File.Exists(filePath))
             {
                 return new List<User>();
@@ -55,28 +63,29 @@ namespace Dictionary
 
             string json = File.ReadAllText(filePath);
             var users = JsonConvert.DeserializeObject<UsersList>(json);
-            return users.users;
+            return users?.users ?? new List<User>();
         }
 
         private void WriteUsersToFile(List<User> usersList)
         {
             try
             {
+                string filePath = GetFilePath();
                 var users = new UsersList { users = usersList };
                 string json = JsonConvert.SerializeObject(users, Formatting.Indented);
-                File.WriteAllText("users.json", json);
+                File.WriteAllText(filePath, json);
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Failed to write to file: {ex.Message}");
             }
         }
-
     }
     public class User
     {
         public string username { get; set; }
         public string password { get; set; }
+        public bool isAdmin { get; set; }
     }
 
     public class UsersList

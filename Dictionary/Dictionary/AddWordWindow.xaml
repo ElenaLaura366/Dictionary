@@ -1,0 +1,85 @@
+﻿<Window x:Class="Dictionary.AddWordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="Add Word" Height="700" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Border Background="White" Grid.Row="0" Grid.ColumnSpan="3">
+            <TextBlock Text="Add New Word to Dictionary" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
+        </Border>
+        <Border Background="White" Grid.Row="1" Grid.Column="0">
+            <StackPanel HorizontalAlignment="Center" Width="300" Margin="0,90">
+                <Label Content="Word:" Target="{Binding ElementName=txtWord}" FontSize="16"/>
+                <TextBox Name="txtWord" Margin="0,5" Padding="5" FontSize="16"/>
+                <Label Content="Description:" FontSize="16" Target="{Binding ElementName=txtDescription}"/>
+                <TextBox Name="txtDescription" Margin="0,5" Padding="5" FontSize="16" Height="100" TextWrapping="Wrap" MaxLength="500"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+                    <Button Content="SELECT IMAGE" Margin="5,0" Width="130" Height="40" Click="SelectImage_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#0047AB"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="BorderBrush" Value="#0047AB"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Content="ADD WORD" Margin="5,0" Width="130" Height="40" Click="AddWord_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#0047AB"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="BorderBrush" Value="#0047AB"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </StackPanel>
+                <TextBlock Name="txtImageName" Margin="0,10,0,0" FontSize="16" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        <Border Background="White" Grid.Row="1" Grid.Column="1">
+            <StackPanel HorizontalAlignment="Center" Width="300" Margin="0,90">
+                <CheckBox Name="chkIsPhrase" Content="New Category" FontSize="16" Margin="0,5" Checked="chkIsPhrase_Checked" Unchecked="chkIsPhrase_Unchecked" VerticalContentAlignment="Center"/>
+                <TextBox Name="txtCategory" Margin="0,5" Padding="5" FontSize="16" Visibility="Collapsed"/>
+                <ScrollViewer Height="200" VerticalScrollBarVisibility="Auto">
+                    <ListBox x:Name="lstCategories" Margin="0,5" Padding="5" FontSize="16" />
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

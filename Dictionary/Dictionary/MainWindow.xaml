@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dictionary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="1000"
+        Title="Main Window" Height="700" Width="1000"
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -16,7 +16,7 @@
         <Border Background="White" Grid.Column="1">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
                 <TextBlock Text="Please choose what you want to do" FontSize="30" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,30"/>
-                <Button Content="ADD WORD" Margin="0,20,0,0" Width="130" Height="40">
+                <Button Content="ADD WORD" Margin="0,20,0,0" Width="130" Height="40" Click="AddWordButton_Click" Name="AddWordButton">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>
@@ -63,6 +63,27 @@
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>
                             <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="#0047AB"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                            <Setter Property="FontSize" Value="14"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Content="LOG OUT" Margin="0,20,0,0" Width="130" Height="40" Click="LogOutButton_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="#0047AB"/>
                             <Setter Property="BorderBrush" Value="#0047AB"/>
                             <Setter Property="BorderThickness" Value="2"/>
                             <Setter Property="FontSize" Value="14"/>
