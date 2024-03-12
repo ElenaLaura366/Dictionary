@@ -22,5 +22,185 @@
     "Category": "Animal",
     "Description": "Animal cu gatul foarte lung",
     "ImageName": "default.png"
+  },
+  {
+    "Word": "Elefant",
+    "Category": "Animal",
+    "Description": "Mamifer cu trompa lunga si urechi mari.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Mar",
+    "Category": "Fructe",
+    "Description": "Fruct mic, rotund, de obicei verde sau rosu.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Leu",
+    "Category": "Animal",
+    "Description": "Mare mamifer carnivore, regele junglei.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Banana",
+    "Category": "Fructe",
+    "Description": "Fruct lung si curbat, de obicei galben.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Tigru",
+    "Category": "Animal",
+    "Description": "Mare felina cu dungi portocalii si negre.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Piersica",
+    "Category": "Fructe",
+    "Description": "Fruct moale, suculent, cu coaja fina.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Papagal",
+    "Category": "Animal",
+    "Description": "Pasare exotica, colorata, care poate imita sunete.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Ananas",
+    "Category": "Fructe",
+    "Description": "Fruct mare, zemos, cu coaja aspra si coroana.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Veverita",
+    "Category": "Animal",
+    "Description": "Animal mic, agil, cu coada pufosa.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Cirese",
+    "Category": "Fructe",
+    "Description": "Fructe mici, rotunde, rosii sau negre.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Lup",
+    "Category": "Animal",
+    "Description": "Mamifer canin salbatic, cunoscut pentru urletele sale.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Kiwi",
+    "Category": "Fructe",
+    "Description": "Fruct mic, de obicei maro sau verde, cu pulpa verde.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Crocodil",
+    "Category": "Animal",
+    "Description": "Reptila mare, cu corp lung si bot ascutit.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Mango",
+    "Category": "Fructe",
+    "Description": "Fruct suculent, dulce, cu coaja galbena sau portocalie.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Bufnita",
+    "Category": "Animal",
+    "Description": "Pasare de noapte, cu pene moi si ochi mari.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Afine",
+    "Category": "Fructe",
+    "Description": "Fructe mici, rotunde, de obicei albastre sau negre.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Iepure",
+    "Category": "Animal",
+    "Description": "Mamifer mic, cu urechi lungi si blana moale.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Mure",
+    "Category": "Fructe",
+    "Description": "Fructe mici, dulci si suculente, de obicei negre.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Rechin",
+    "Category": "Animal",
+    "Description": "Peste mare, cartilaginos, cu dinti ascutiti.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Piersic",
+    "Category": "Fructe",
+    "Description": "Varianta alternativa a cuvantului \"piersica\", folosita in anumite regiuni.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Calculator",
+    "Category": "Tehnologie",
+    "Description": "Dispozitiv electronic pentru efectuarea calculelor si prelucrarea datelor.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Telefon",
+    "Category": "Tehnologie",
+    "Description": "Dispozitiv mobil de comunicatii, pentru apeluri si mesaje.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Internet",
+    "Category": "Tehnologie",
+    "Description": "Retea globala de calculatoare si dispozitive interconectate.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Robot",
+    "Category": "Tehnologie",
+    "Description": "Dispozitiv programabil, capabil sa execute actiuni complexe automatizate.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Satelit",
+    "Category": "Tehnologie",
+    "Description": "Obiect artificial trimis in spatiu pentru observatii sau comunicatii.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Carte",
+    "Category": "Educatie",
+    "Description": "Lucrare tiparita sau electronica care contine informatii sau povestiri.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Profesor",
+    "Category": "Educatie",
+    "Description": "Persoana care preda sau indruma elevii sau studentii.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Scoala",
+    "Category": "Educatie",
+    "Description": "Institutie de invatamant unde se fac studii si se dau lectii.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Matematica",
+    "Category": "Educatie",
+    "Description": "Stiinta care se ocupa cu proprietatile numerelor si formelor.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Laborator",
+    "Category": "Educatie",
+    "Description": "Incapere sau spatiu echipat pentru experimente si cercetare stiintifica.",
+    "ImageName": "default.png"
   }
 ]
