@@ -3,13 +3,13 @@
     "Word": "Caine",
     "Category": "Animal",
     "Description": "Animal cu 4 piciore, cel mai bun prieten al omului",
-    "ImageName": "default.png"
+    "ImageName": "caine.png"
   },
   {
     "Word": "Pisica",
     "Category": "Animal",
     "Description": "Animal cu 4 pisioare, domestic, cu mustati",
-    "ImageName": "default.png"
+    "ImageName": "pisica.png"
   },
   {
     "Word": "Portocala",
@@ -21,7 +21,7 @@
     "Word": "Girafa",
     "Category": "Animal",
     "Description": "Animal cu gatul foarte lung",
-    "ImageName": "default.png"
+    "ImageName": "girafa.png"
   },
   {
     "Word": "Elefant",
@@ -33,13 +33,13 @@
     "Word": "Mar",
     "Category": "Fructe",
     "Description": "Fruct mic, rotund, de obicei verde sau rosu.",
-    "ImageName": "default.png"
+    "ImageName": "mar.png"
   },
   {
     "Word": "Leu",
     "Category": "Animal",
     "Description": "Mare mamifer carnivore, regele junglei.",
-    "ImageName": "default.png"
+    "ImageName": "leu.png"
   },
   {
     "Word": "Banana",
@@ -57,7 +57,7 @@
     "Word": "Piersica",
     "Category": "Fructe",
     "Description": "Fruct moale, suculent, cu coaja fina.",
-    "ImageName": "default.png"
+    "ImageName": "piersica.png"
   },
   {
     "Word": "Papagal",
@@ -69,7 +69,7 @@
     "Word": "Ananas",
     "Category": "Fructe",
     "Description": "Fruct mare, zemos, cu coaja aspra si coroana.",
-    "ImageName": "default.png"
+    "ImageName": "ananas.png"
   },
   {
     "Word": "Veverita",
@@ -81,7 +81,7 @@
     "Word": "Cirese",
     "Category": "Fructe",
     "Description": "Fructe mici, rotunde, rosii sau negre.",
-    "ImageName": "default.png"
+    "ImageName": "cirese.png"
   },
   {
     "Word": "Lup",
@@ -111,7 +111,7 @@
     "Word": "Bufnita",
     "Category": "Animal",
     "Description": "Pasare de noapte, cu pene moi si ochi mari.",
-    "ImageName": "default.png"
+    "ImageName": "bufnita.png"
   },
   {
     "Word": "Afine",
@@ -129,7 +129,7 @@
     "Word": "Mure",
     "Category": "Fructe",
     "Description": "Fructe mici, dulci si suculente, de obicei negre.",
-    "ImageName": "default.png"
+    "ImageName": "mure.png"
   },
   {
     "Word": "Rechin",
@@ -147,7 +147,7 @@
     "Word": "Calculator",
     "Category": "Tehnologie",
     "Description": "Dispozitiv electronic pentru efectuarea calculelor si prelucrarea datelor.",
-    "ImageName": "default.png"
+    "ImageName": "calculator.png"
   },
   {
     "Word": "Telefon",
@@ -159,13 +159,13 @@
     "Word": "Internet",
     "Category": "Tehnologie",
     "Description": "Retea globala de calculatoare si dispozitive interconectate.",
-    "ImageName": "default.png"
+    "ImageName": "internet.png"
   },
   {
     "Word": "Robot",
     "Category": "Tehnologie",
     "Description": "Dispozitiv programabil, capabil sa execute actiuni complexe automatizate.",
-    "ImageName": "default.png"
+    "ImageName": "robot.png"
   },
   {
     "Word": "Satelit",
@@ -177,7 +177,7 @@
     "Word": "Carte",
     "Category": "Educatie",
     "Description": "Lucrare tiparita sau electronica care contine informatii sau povestiri.",
-    "ImageName": "default.png"
+    "ImageName": "carti.png"
   },
   {
     "Word": "Profesor",
@@ -189,18 +189,120 @@
     "Word": "Scoala",
     "Category": "Educatie",
     "Description": "Institutie de invatamant unde se fac studii si se dau lectii.",
-    "ImageName": "default.png"
+    "ImageName": "scoala.png"
   },
   {
     "Word": "Matematica",
     "Category": "Educatie",
     "Description": "Stiinta care se ocupa cu proprietatile numerelor si formelor.",
-    "ImageName": "default.png"
+    "ImageName": "math.jpg"
   },
   {
     "Word": "Laborator",
     "Category": "Educatie",
     "Description": "Incapere sau spatiu echipat pentru experimente si cercetare stiintifica.",
     "ImageName": "default.png"
+  },
+  {
+    "Word": "Munte",
+    "Category": "Geografie",
+    "Description": "Forma de relief mare si inalta, mai inalta decat un deal.",
+    "ImageName": "munte.png"
+  },
+  {
+    "Word": "Rau",
+    "Category": "Geografie",
+    "Description": "Curs de apa natural, care se varsa intr-o alta apa.",
+    "ImageName": "rau.png"
+  },
+  {
+    "Word": "Insula",
+    "Category": "Geografie",
+    "Description": "Portiune de pamant inconjurata de apa pe toate partile.",
+    "ImageName": "insula.png"
+  },
+  {
+    "Word": "Desert",
+    "Category": "Geografie",
+    "Description": "Zona arida cu precipitatii foarte scazute.",
+    "ImageName": "desert.png"
+  },
+  {
+    "Word": "Ocean",
+    "Category": "Geografie",
+    "Description": "Cea mai mare intindere de apa sarata.",
+    "ImageName": "ocean.png"
+  },
+  {
+    "Word": "Bucatar",
+    "Category": "Meserii",
+    "Description": "Persoana care pregateste mancare intr-un cadru profesional.",
+    "ImageName": "bucatar.png"
+  },
+  {
+    "Word": "Pilot",
+    "Category": "Meserii",
+    "Description": "Persoana care conduce avioane.",
+    "ImageName": "pilot.png"
+  },
+  {
+    "Word": "Arhitect",
+    "Category": "Meserii",
+    "Description": "Persoana care proiecteaza cladiri si supravegheaza constructia lor.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Inginer",
+    "Category": "Meserii",
+    "Description": "Profesionist in aplicarea principiilor stiintifice la design si dezvoltare.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Fotograf",
+    "Category": "Meserii",
+    "Description": "Persoana care face fotografii ca profesie.",
+    "ImageName": "fotograf.png"
+  },
+  {
+    "Word": "Fier",
+    "Category": "Elemente chimice",
+    "Description": "Metal utilizat in constructii si industrie, simbol Fe.",
+    "ImageName": "fier.png"
+  },
+  {
+    "Word": "Oxigen",
+    "Category": "Elemente chimice",
+    "Description": "Element chimic esential pentru respiratie, simbol O.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Carbon",
+    "Category": "Elemente chimice",
+    "Description": "Element chimic prezent in toate formele de viata, simbol C.",
+    "ImageName": "carbon.png"
+  },
+  {
+    "Word": "Aur",
+    "Category": "Elemente chimice",
+    "Description": "Metal pretios, galben, utilizat in bijuterii si electronica, simbol Au.",
+    "ImageName": "aur.png"
+  },
+  {
+    "Word": "Hidrogen",
+    "Category": "Elemente chimice",
+    "Description": "Cel mai usor si mai abundent element chimic, simbol H.",
+    "ImageName": "default.png"
+  },
+  {
+    "Word": "Opera",
+    "Category": "Arta",
+    "Description": "Forma de teatru in care muzica are rol principal.",
+    "ImageName": "opera.png"
+  },
+  {
+    "Word": "Sculptura",
+    "Category": "Arta",
+    "Description": "Arta de a crea figuri sau obiecte in trei dimensiuni.",
+    "ImageName": "sculptura.png"
   }
 ]
