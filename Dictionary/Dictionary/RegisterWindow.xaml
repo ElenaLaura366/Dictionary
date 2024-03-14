@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dictionary"
+        xmlns:helpers="clr-namespace:Dictionary.Helpers"
         mc:Ignorable="d"
         Title="Register" Height="700" Width="1000"
         WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:RegisterViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -18,7 +22,7 @@
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
                 <TextBlock Text="Hello, Friend!" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" Foreground="White"/>
                 <TextBlock Text="If you already have an account, please Login" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,20" Foreground="White" FontSize="16"/>
-                <Button Content="LOGIN" Margin="0,20,0,0" Width="130" Height="40" Click="LoginButton_Click">
+                <Button Content="LOGIN" Margin="0,20,0,0" Width="130" Height="40" Command="{Binding LoginCommand}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="White"/>
@@ -46,13 +50,15 @@
         <Border Background="White" Grid.Column="1">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
                 <TextBlock Text="Sign in" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
-                <Label Content="Username:" Target="{Binding ElementName=txtUsername}" FontSize="16"/>
-                <TextBox Name="txtUsername" Margin="0,5" Padding="5" FontSize="16"/>
-                <Label Content="Password:" Target="{Binding ElementName=passPassword}" FontSize="16"/>
-                <PasswordBox Name="passPassword" Margin="0,5" Padding="5" FontSize="16"/>
-                <Label Content="Verify Password:" Target="{Binding ElementName=passPasswordVerify}" FontSize="16"/>
-                <PasswordBox Name="passPasswordVerify" Margin="0,5" Padding="5" FontSize="16"/>
-                <Button Content="REGISTER" Click="RegisterButton_Click" Margin="0,20,0,0" Width="130" Height="40">
+                <Label Content="Username:" FontSize="16"/>
+                <TextBox Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Padding="5" FontSize="16"/>
+                <Label Content="Password:" FontSize="16"/>
+                <PasswordBox x:Name="txtPassword" Margin="0,5" Padding="5" FontSize="16"
+              helpers:PasswordBoxHelper.BoundPassword="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Content="Verify Password:" FontSize="16"/>
+                <PasswordBox x:Name="txtPasswordVerify" Margin="0,5" Padding="5" FontSize="16"
+              helpers:PasswordBoxHelper.BoundPassword="{Binding PasswordVerify, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button Content="REGISTER" Command="{Binding RegisterCommand}" Margin="0,20,0,0" Width="130" Height="40">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>

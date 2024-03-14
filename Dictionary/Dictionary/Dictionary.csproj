@@ -58,21 +58,31 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddWordViewModel.cs" />
     <Compile Include="AddWordWindow.xaml.cs">
       <DependentUpon>AddWordWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LoginViewModel.cs" />
+    <Compile Include="MainViewModel.cs" />
+    <Compile Include="PasswordBoxHelper.cs" />
     <Compile Include="PlayWindow.xaml.cs">
       <DependentUpon>PlayWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PlayWindowViewModel.cs" />
+    <Compile Include="RegisterViewModel.cs" />
     <Compile Include="RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="SearchWordViewModel.cs" />
     <Compile Include="SearchWordWindow.xaml.cs">
       <DependentUpon>SearchWordWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WordDetailsViewModel.cs" />
     <Compile Include="WordDetailsWindow.xaml.cs">
       <DependentUpon>WordDetailsWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WordItem.cs" />
     <Page Include="AddWordWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

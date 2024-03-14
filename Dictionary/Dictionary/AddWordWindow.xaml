@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Add Word" Height="700" Width="1000"
         WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:AddWordViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,7 +22,7 @@
         <Border Background="White" Grid.Row="0" Grid.ColumnSpan="3">
             <Grid>
                 <TextBlock Text="Add New Word to Dictionary" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,20"/>
-                <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Back_Click"
+                <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Command="{Binding BackCommand}"
                 Panel.ZIndex="1">
                     <Button.Style>
                         <Style TargetType="Button">
@@ -46,11 +49,11 @@
         <Border Background="White" Grid.Row="1" Grid.Column="0">
             <StackPanel HorizontalAlignment="Center" Width="300" Margin="0,90">
                 <Label Content="Word:" Target="{Binding ElementName=txtWord}" FontSize="16"/>
-                <TextBox Name="txtWord" Margin="0,5" Padding="5" FontSize="16"/>
+                <TextBox Name="txtWord" Text="{Binding Word, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Padding="5" FontSize="16"/>
                 <Label Content="Description:" FontSize="16" Target="{Binding ElementName=txtDescription}"/>
-                <TextBox Name="txtDescription" Margin="0,5" Padding="5" FontSize="16" Height="100" TextWrapping="Wrap" MaxLength="500"/>
+                <TextBox Name="txtDescription" Text="{Binding Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="0,5" Padding="5" FontSize="16" Height="100" TextWrapping="Wrap" MaxLength="500"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
-                    <Button Content="SELECT IMAGE" Margin="5,0" Width="130" Height="40" Click="SelectImage_Click">
+                    <Button Content="SELECT IMAGE" Margin="5,0" Width="130" Height="40" Command="{Binding SelectImageCommand}">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#0047AB"/>
@@ -71,7 +74,7 @@
                             </Style>
                         </Button.Style>
                     </Button>
-                    <Button Content="ADD WORD" Margin="5,0" Width="130" Height="40" Click="AddWord_Click">
+                    <Button Content="ADD WORD" Margin="5,0" Width="130" Height="40" Command="{Binding AddWordCommand}">
                         <Button.Style>
                             <Style TargetType="Button">
                                 <Setter Property="Background" Value="#0047AB"/>
@@ -98,10 +101,18 @@
         </Border>
         <Border Background="White" Grid.Row="1" Grid.Column="1">
             <StackPanel HorizontalAlignment="Center" Width="300" Margin="0,90">
-                <CheckBox Name="chkIsPhrase" Content="New Category" FontSize="16" Margin="0,5" Checked="chkIsPhrase_Checked" Unchecked="chkIsPhrase_Unchecked" VerticalContentAlignment="Center"/>
-                <TextBox Name="txtCategory" Margin="0,5" Padding="5" FontSize="16" Visibility="Collapsed"/>
+                <CheckBox Name="chkIsPhrase" Content="New Category" FontSize="16" Margin="0,5" VerticalContentAlignment="Center"
+                    IsChecked="{Binding IsPhrase, Mode=TwoWay}"/>
+                <TextBox Name="txtCategory" Text="{Binding Category, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding IsCategoryVisible}" Margin="0,5" Padding="5" FontSize="16"/>
                 <ScrollViewer Height="200" VerticalScrollBarVisibility="Auto">
-                    <ListBox x:Name="lstCategories" Margin="0,5" Padding="5" FontSize="16" />
+                    <ListBox x:Name="lstCategories" ItemsSource="{Binding Categories}" SelectedItem="{Binding Category, Mode=TwoWay}" Visibility="{Binding IsCategoryListVisible}" Margin="0,5" Padding="5" FontSize="16">
+                        <!-- Utilizează ItemTemplate dacă dorești personalizare -->
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
                 </ScrollViewer>
             </StackPanel>
         </Border>

@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Play" Height="700" Width="1000"
         WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:PlayWindowViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -18,7 +21,7 @@
             <RowDefinition Height="3*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Back_Click" Grid.Column="0" Grid.Row="0">
+        <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Command="{Binding BackCommand}" Grid.Column="0" Grid.Row="0">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="White"/>
@@ -39,11 +42,11 @@
                 </Style>
             </Button.Style>
         </Button>
-        <TextBlock x:Name="ScoreText" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="10,10,0,0" Grid.Column="2" Grid.Row="0"/>
-        <Image x:Name="MyImage" Width="350" Height="400" Grid.Column="1" Grid.Row="1"/>
-        <TextBlock x:Name="MyTextBlock" Width="350" Height="300" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="16"/>
-        <TextBox Name="txtBox" Width="300" Height="35" Padding="5" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="16"/>
-        <Button Content="SUBMIT" Margin="0,20,0,0" Width="130" Height="40" Grid.Column="2" Grid.Row="2" Click="Submit_Click">
+        <TextBlock Text="{Binding ScoreText}" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" Margin="10,10,0,0" Grid.Column="2" Grid.Row="0"/>
+        <Image Width="350" Height="400" Grid.Column="1" Grid.Row="1" Source="{Binding CurrentImagePath}"/>
+        <TextBlock Width="350" Height="300" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="16" Text="{Binding CurrentDescription}"/>
+        <TextBox Width="300" Height="35" Padding="5" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="16" Text="{Binding UserInput, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button Content="SUBMIT" Margin="0,20,0,0" Width="130" Height="40" Grid.Column="2" Grid.Row="2" Command="{Binding SubmitCommand}" CommandParameter="{Binding CurrentWord}">
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#0047AB"/>

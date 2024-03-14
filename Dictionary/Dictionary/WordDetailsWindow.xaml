@@ -17,15 +17,15 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Center" Width="350" Margin="0,70" Grid.Column="0" Grid.Row="0">
-            <TextBlock Name="CustomWord" FontSize="24" FontWeight="Bold" Margin="0,0,0,15"/>
-            <TextBlock Name="CustomCategory" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
+            <TextBlock Text="{Binding WordItem.Word}" FontSize="24" FontWeight="Bold" Margin="0,0,0,15"/>
+            <TextBlock Text="{Binding WordItem.Category}" FontSize="24" FontWeight="Bold" Margin="0,0,0,10"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" Width="350" Grid.Column="0" Grid.Row="1">
             <TextBlock Text="Description" FontSize="24" FontWeight="Bold" Margin="0,0,0,15" TextAlignment="Center"/>
-            <TextBlock Name="CustomDescription" FontSize="16" Margin="0,0,0,10" TextWrapping="Wrap"/>
+            <TextBlock Text="{Binding WordItem.Description}" FontSize="16" Margin="0,0,0,10" TextWrapping="Wrap"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.RowSpan="2">
-            <Image x:Name="MyImage" Width="350" Height="450"/>
+            <Image Width="350" Height="450" Source="{Binding ImagePath}" />
         </StackPanel>
     </Grid>
 </Window>

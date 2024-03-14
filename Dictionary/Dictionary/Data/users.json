@@ -9,6 +9,16 @@
       "username": "David",
       "password": "asas",
       "isAdmin": false
+    },
+    {
+      "username": "Alexia",
+      "password": "asas",
+      "isAdmin": false
+    },
+    {
+      "username": "Catalin",
+      "password": "asas",
+      "isAdmin": false
     }
   ]
 }

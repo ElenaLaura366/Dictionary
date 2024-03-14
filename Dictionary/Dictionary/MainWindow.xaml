@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Main Window" Height="700" Width="1000"
         WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -16,7 +19,7 @@
         <Border Background="White" Grid.Column="1">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
                 <TextBlock Text="Please choose what you want to do" FontSize="30" FontWeight="Bold" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Margin="0,0,0,30"/>
-                <Button Content="ADD WORD" Margin="0,20,0,0" Width="130" Height="40" Click="AddWordButton_Click" Name="AddWordButton">
+                <Button Content="ADD WORD" Margin="0,20,0,0" Width="130" Height="40" Name="AddWordButton" Command="{Binding AddWordCommand}" Visibility="{Binding IsUserAdmin, Converter={StaticResource BooleanToVisibilityConverter}}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>
@@ -37,7 +40,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="SEARCH WORD" Margin="0,20,0,0" Width="130" Height="40" Click="SearchWordButton_Click">
+                <Button Content="SEARCH WORD" Margin="0,20,0,0" Width="130" Height="40" Command="{Binding SearchWordCommand}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>
@@ -58,7 +61,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="PLAY GAME" Margin="0,20,0,0" Width="130" Height="40" Click="PlayButton_Click">
+                <Button Content="PLAY GAME" Margin="0,20,0,0" Width="130" Height="40" Command="{Binding PlayCommand}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="#0047AB"/>
@@ -79,7 +82,7 @@
                         </Style>
                     </Button.Style>
                 </Button>
-                <Button Content="LOG OUT" Margin="0,20,0,0" Width="130" Height="40" Click="LogOutButton_Click">
+                <Button Content="LOG OUT" Margin="0,20,0,0" Width="130" Height="40" Command="{Binding LogOutCommand}">
                     <Button.Style>
                         <Style TargetType="Button">
                             <Setter Property="Background" Value="White"/>
