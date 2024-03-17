@@ -32,12 +32,22 @@ namespace Dictionary
         }
 
         public ICommand SearchCommand { get; }
+        public ICommand BackCommand { get; }
 
         public SearchWordViewModel()
         {
             LoadCategories();
             LoadWordItems();
             SearchCommand = new RelayCommand(ShowWordDetails);
+            BackCommand = new RelayCommand(CloseWindow);
+        }
+
+        private void CloseWindow(object parameter)
+        {
+            if (parameter is Window window)
+            {
+                window.Close();
+            }
         }
 
         private void LoadCategories()

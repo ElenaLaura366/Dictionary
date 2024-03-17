@@ -64,6 +64,7 @@ namespace Dictionary
             {
                 MessageBox.Show("Login successful!");
                 IsUserAdmin = user.isAdmin;
+                ApplicationState.IsUserAdmin = user.isAdmin;
                 ShowMainWindow();
             }
             else
@@ -74,7 +75,7 @@ namespace Dictionary
         private void ShowMainWindow()
         {
             var mainWindow = new MainWindow();
-            mainWindow.DataContext = new MainViewModel { IsUserAdmin = this.IsUserAdmin };
+            mainWindow.DataContext = new MainViewModel { IsUserAdmin = this.IsUserAdmin }; // Transmite informația că utilizatorul este admin
             mainWindow.Show();
             CloseLoginWindow();
         }

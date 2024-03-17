@@ -17,7 +17,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Border Grid.Column="0">
-            <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Command="{Binding BackCommand}">
+            <Button Content="BACK" Margin="20,20,0,0" Width="130" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Command="{Binding BackCommand}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="Background" Value="White"/>
@@ -68,7 +68,5 @@
                 <ListBox Name="ResultsListBox" ItemsSource="{Binding FilteredWords}" Width="300" Height="200" FontSize="16" SelectionMode="Single" />
             </StackPanel>
         </Border>
-        
-        
     </Grid>
 </Window>

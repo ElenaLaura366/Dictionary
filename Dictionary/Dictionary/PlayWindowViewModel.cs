@@ -34,12 +34,15 @@ namespace Dictionary
         public string ScoreText => $"Scor: {score}";
 
         public ICommand SubmitCommand { get; }
+        public ICommand BackCommand { get; }
+        public Action CloseAction { get; set; }
 
         public PlayWindowViewModel()
         {
             SubmitCommand = new RelayCommand(Submit);
             LoadWords();
             StartNewRound();
+            BackCommand = new RelayCommand(o => CloseAction?.Invoke());
         }
 
         private void LoadWords()
@@ -54,8 +57,7 @@ namespace Dictionary
             if (currentRound >= totalRounds)
             {
                 MessageBox.Show($"Joc terminat! Scorul tău final este: {score}");
-                Application.Current.MainWindow.DataContext = new MainViewModel();
-                return;
+                CloseAction?.Invoke();
             }
 
             Random rnd = new Random();

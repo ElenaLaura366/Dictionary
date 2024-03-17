@@ -12,7 +12,11 @@ namespace Dictionary
         public PlayWindow()
         {
             InitializeComponent();
-            this.DataContext = new PlayWindowViewModel();
+            var viewModel = DataContext as PlayWindowViewModel;
+            if (viewModel != null)
+            {
+                viewModel.CloseAction = new Action(this.Close);
+            }
         }
     }
 }

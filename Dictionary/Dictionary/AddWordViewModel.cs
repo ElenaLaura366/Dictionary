@@ -23,7 +23,19 @@ namespace Dictionary
         private string imageName;
         private string category;
         private bool isPhrase;
-
+        private bool isUserAdmin;
+        public bool IsUserAdmin
+        {
+            get => isUserAdmin;
+            set
+            {
+                if (isUserAdmin != value)
+                {
+                    isUserAdmin = value;
+                    OnPropertyChanged(nameof(IsUserAdmin));
+                }
+            }
+        }
         public string Word
         {
             get => word;
@@ -190,13 +202,13 @@ namespace Dictionary
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
-                var mainWindow = new MainWindow();
-                mainWindow.Show();
+                // Închide fereastra curentă
                 foreach (Window window in Application.Current.Windows)
                 {
                     if (window is AddWordWindow)
                     {
                         window.Close();
+                        break;
                     }
                 }
             });

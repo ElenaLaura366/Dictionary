@@ -38,12 +38,14 @@ namespace Dictionary
             SearchWordCommand = new RelayCommand(() => ExecuteSearchWordCommand());
         }
 
+
         private void ExecuteAddWordCommand()
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
                 AddWordWindow addWordWindow = new AddWordWindow();
                 addWordWindow.Show();
+                //Application.Current.MainWindow.Close();
             });
         }
 
@@ -53,6 +55,7 @@ namespace Dictionary
             {
                 PlayWindow playWindow = new PlayWindow();
                 playWindow.Show();
+                //Application.Current.MainWindow.Close();
             });
         }
 
@@ -72,6 +75,7 @@ namespace Dictionary
             {
                 SearchWordWindow searchWordWindow = new SearchWordWindow();
                 searchWordWindow.Show();
+                //Application.Current.MainWindow.Close();
             });
         }
 

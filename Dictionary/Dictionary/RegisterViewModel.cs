@@ -121,11 +121,30 @@ namespace Dictionary
             return fullPath;
         }
 
+        private void Register()
+        {
+            var registerWindow = new RegisterWindow();
+            registerWindow.Show();
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window is LoginWindow)
+                {
+                    window.Close();
+                }
+            }
+        }
+
         private void Login(object parameter)
         {
-            LoginWindow loginWindow = new LoginWindow();
+            var loginWindow = new LoginWindow();
             loginWindow.Show();
-            Application.Current.MainWindow?.Close();
+            foreach (Window window in Application.Current.Windows)
+            {
+                if (window is RegisterWindow)
+                {
+                    window.Close();
+                }
+            }
         }
 
         protected virtual void OnPropertyChanged(string propertyName)
