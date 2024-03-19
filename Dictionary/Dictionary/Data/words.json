@@ -1,308 +1,302 @@
 [
   {
-    "Word": "Caine",
+    "Word": "Dog",
     "Category": "Animal",
-    "Description": "Animal cu 4 piciore, cel mai bun prieten al omului",
-    "ImageName": "caine.png"
+    "Description": "A four-legged animal, best friend of humans.",
+    "ImageName": "dog.jpg"
   },
   {
-    "Word": "Pisica",
+    "Word": "Orange",
+    "Category": "Fruits",
+    "Description": "A fruit rich in Vitamin C.",
+    "ImageName": "orange.jpg"
+  },
+  {
+    "Word": "Giraffe",
     "Category": "Animal",
-    "Description": "Animal cu 4 pisioare, domestic, cu mustati",
-    "ImageName": "pisica.png"
+    "Description": "An animal with a very long neck.",
+    "ImageName": "giraffe.jpg"
   },
   {
-    "Word": "Portocala",
-    "Category": "Fructe",
-    "Description": "Bogat in vitamina D si este denumit dupa o culoare",
-    "ImageName": "default.png"
-  },
-  {
-    "Word": "Girafa",
+    "Word": "Elephant",
     "Category": "Animal",
-    "Description": "Animal cu gatul foarte lung",
-    "ImageName": "girafa.png"
+    "Description": "A mammal with a long trunk and large ears.",
+    "ImageName": "elephant.jpg"
   },
   {
-    "Word": "Elefant",
+    "Word": "Apple",
+    "Category": "Fruits",
+    "Description": "A small, round fruit, usually green or red.",
+    "ImageName": "apple.jpg"
+  },
+  {
+    "Word": "Lion",
     "Category": "Animal",
-    "Description": "Mamifer cu trompa lunga si urechi mari.",
-    "ImageName": "default.png"
-  },
-  {
-    "Word": "Mar",
-    "Category": "Fructe",
-    "Description": "Fruct mic, rotund, de obicei verde sau rosu.",
-    "ImageName": "mar.png"
-  },
-  {
-    "Word": "Leu",
-    "Category": "Animal",
-    "Description": "Mare mamifer carnivore, regele junglei.",
-    "ImageName": "leu.png"
+    "Description": "A large carnivorous mammal, known as the king of the jungle.",
+    "ImageName": "lion.jpg"
   },
   {
     "Word": "Banana",
-    "Category": "Fructe",
-    "Description": "Fruct lung si curbat, de obicei galben.",
-    "ImageName": "default.png"
+    "Category": "Fruits",
+    "Description": "A long and curved fruit, usually yellow.",
+    "ImageName": "banana.jpg"
   },
   {
-    "Word": "Tigru",
+    "Word": "Tiger",
     "Category": "Animal",
-    "Description": "Mare felina cu dungi portocalii si negre.",
-    "ImageName": "default.png"
+    "Description": "A large feline with orange and black stripes.",
+    "ImageName": "tiger.jpg"
   },
   {
-    "Word": "Piersica",
-    "Category": "Fructe",
-    "Description": "Fruct moale, suculent, cu coaja fina.",
-    "ImageName": "piersica.png"
+    "Word": "Peach",
+    "Category": "Fruits",
+    "Description": "A soft, succulent fruit with a fine peel.",
+    "ImageName": "peach.jpg"
   },
   {
-    "Word": "Papagal",
+    "Word": "Parrot",
     "Category": "Animal",
-    "Description": "Pasare exotica, colorata, care poate imita sunete.",
-    "ImageName": "default.png"
+    "Description": "An exotic, colorful bird that can imitate sounds.",
+    "ImageName": "parrot.jpg"
   },
   {
-    "Word": "Ananas",
-    "Category": "Fructe",
-    "Description": "Fruct mare, zemos, cu coaja aspra si coroana.",
-    "ImageName": "ananas.png"
+    "Word": "Pineapple",
+    "Category": "Fruits",
+    "Description": "A large, juicy fruit with a rough exterior and crown.",
+    "ImageName": "pineapple.jpg"
   },
   {
-    "Word": "Veverita",
+    "Word": "Squirrel",
     "Category": "Animal",
-    "Description": "Animal mic, agil, cu coada pufosa.",
-    "ImageName": "default.png"
+    "Description": "A small, agile animal with a fluffy tail.",
+    "ImageName": "squirrel.jpg"
   },
   {
-    "Word": "Cirese",
-    "Category": "Fructe",
-    "Description": "Fructe mici, rotunde, rosii sau negre.",
-    "ImageName": "cirese.png"
+    "Word": "Cherries",
+    "Category": "Fruits",
+    "Description": "Small, round fruits, red or black in color.",
+    "ImageName": "cherries.jpg"
   },
   {
-    "Word": "Lup",
+    "Word": "Wolf",
     "Category": "Animal",
-    "Description": "Mamifer canin salbatic, cunoscut pentru urletele sale.",
-    "ImageName": "default.png"
+    "Description": "A wild canine mammal, known for its howling.",
+    "ImageName": "wolf.jpg"
   },
   {
     "Word": "Kiwi",
-    "Category": "Fructe",
-    "Description": "Fruct mic, de obicei maro sau verde, cu pulpa verde.",
-    "ImageName": "default.png"
+    "Category": "Fruits",
+    "Description": "A small fruit, usually brown or green, with green flesh.",
+    "ImageName": "kiwi.jpg"
   },
   {
-    "Word": "Crocodil",
+    "Word": "Crocodile",
     "Category": "Animal",
-    "Description": "Reptila mare, cu corp lung si bot ascutit.",
-    "ImageName": "default.png"
+    "Description": "A large reptile with a long body and sharp snout.",
+    "ImageName": "crocodile.jpg"
   },
   {
     "Word": "Mango",
-    "Category": "Fructe",
-    "Description": "Fruct suculent, dulce, cu coaja galbena sau portocalie.",
-    "ImageName": "default.png"
+    "Category": "Fruits",
+    "Description": "A juicy, sweet fruit with yellow or orange peel.",
+    "ImageName": "mango.jpg"
   },
   {
-    "Word": "Bufnita",
+    "Word": "Owl",
     "Category": "Animal",
-    "Description": "Pasare de noapte, cu pene moi si ochi mari.",
-    "ImageName": "bufnita.png"
+    "Description": "A nocturnal bird with soft feathers and large eyes.",
+    "ImageName": "owl.jpg"
   },
   {
-    "Word": "Afine",
-    "Category": "Fructe",
-    "Description": "Fructe mici, rotunde, de obicei albastre sau negre.",
-    "ImageName": "default.png"
+    "Word": "Blueberries",
+    "Category": "Fruits",
+    "Description": "Small, round fruits, usually blue or black.",
+    "ImageName": "blueberries.jpg"
   },
   {
-    "Word": "Iepure",
+    "Word": "Rabbit",
     "Category": "Animal",
-    "Description": "Mamifer mic, cu urechi lungi si blana moale.",
-    "ImageName": "default.png"
+    "Description": "A small mammal with long ears and soft fur.",
+    "ImageName": "rabbit.jpg"
   },
   {
-    "Word": "Mure",
-    "Category": "Fructe",
-    "Description": "Fructe mici, dulci si suculente, de obicei negre.",
-    "ImageName": "mure.png"
+    "Word": "Blackberries",
+    "Category": "Fruits",
+    "Description": "Small, sweet, and juicy fruits, usually black.",
+    "ImageName": "blackberries.jpg"
   },
   {
-    "Word": "Rechin",
+    "Word": "Shark",
     "Category": "Animal",
-    "Description": "Peste mare, cartilaginos, cu dinti ascutiti.",
-    "ImageName": "default.png"
+    "Description": "A large, cartilaginous fish with sharp teeth.",
+    "ImageName": "shark.jpg"
   },
   {
-    "Word": "Piersic",
-    "Category": "Fructe",
-    "Description": "Varianta alternativa a cuvantului \"piersica\", folosita in anumite regiuni.",
-    "ImageName": "default.png"
+    "Word": "Peach (alternative)",
+    "Category": "Fruits",
+    "Description": "An alternative term for 'peach,' used in certain regions.",
+    "ImageName": "default.jpg"
   },
   {
-    "Word": "Calculator",
-    "Category": "Tehnologie",
-    "Description": "Dispozitiv electronic pentru efectuarea calculelor si prelucrarea datelor.",
-    "ImageName": "calculator.png"
+    "Word": "Computer",
+    "Category": "Technology",
+    "Description": "An electronic device for performing calculations and processing data.",
+    "ImageName": "computer.jpg"
   },
   {
-    "Word": "Telefon",
-    "Category": "Tehnologie",
-    "Description": "Dispozitiv mobil de comunicatii, pentru apeluri si mesaje.",
-    "ImageName": "default.png"
+    "Word": "Phone",
+    "Category": "Technology",
+    "Description": "A mobile communication device, for calls and messages.",
+    "ImageName": "phone.jpg"
   },
   {
     "Word": "Internet",
-    "Category": "Tehnologie",
-    "Description": "Retea globala de calculatoare si dispozitive interconectate.",
-    "ImageName": "internet.png"
+    "Category": "Technology",
+    "Description": "A global network of computers and interconnected devices.",
+    "ImageName": "internet.jpg"
   },
   {
     "Word": "Robot",
-    "Category": "Tehnologie",
-    "Description": "Dispozitiv programabil, capabil sa execute actiuni complexe automatizate.",
-    "ImageName": "robot.png"
+    "Category": "Technology",
+    "Description": "A programmable device, capable of performing complex automated actions.",
+    "ImageName": "robot.jpg"
   },
   {
-    "Word": "Satelit",
-    "Category": "Tehnologie",
-    "Description": "Obiect artificial trimis in spatiu pentru observatii sau comunicatii.",
-    "ImageName": "default.png"
+    "Word": "Satellite",
+    "Category": "Technology",
+    "Description": "An artificial object sent into space for observations or communications.",
+    "ImageName": "satellite.jpg"
   },
   {
-    "Word": "Carte",
-    "Category": "Educatie",
-    "Description": "Lucrare tiparita sau electronica care contine informatii sau povestiri.",
-    "ImageName": "carti.png"
+    "Word": "Book",
+    "Category": "Education",
+    "Description": "A printed or electronic work containing information or stories.",
+    "ImageName": "book.jpg"
   },
   {
-    "Word": "Profesor",
-    "Category": "Educatie",
-    "Description": "Persoana care preda sau indruma elevii sau studentii.",
-    "ImageName": "default.png"
+    "Word": "Teacher",
+    "Category": "Education",
+    "Description": "A person who teaches or guides students.",
+    "ImageName": "teacher.jpg"
   },
   {
-    "Word": "Scoala",
-    "Category": "Educatie",
-    "Description": "Institutie de invatamant unde se fac studii si se dau lectii.",
-    "ImageName": "scoala.png"
+    "Word": "School",
+    "Category": "Education",
+    "Description": "An educational institution where studies and lessons are conducted.",
+    "ImageName": "school.jpg"
   },
   {
-    "Word": "Matematica",
-    "Category": "Educatie",
-    "Description": "Stiinta care se ocupa cu proprietatile numerelor si formelor.",
-    "ImageName": "math.jpg"
+    "Word": "Mathematics",
+    "Category": "Education",
+    "Description": "The science dealing with the properties of numbers and shapes.",
+    "ImageName": "mathematics.jpg"
   },
   {
-    "Word": "Laborator",
-    "Category": "Educatie",
-    "Description": "Incapere sau spatiu echipat pentru experimente si cercetare stiintifica.",
-    "ImageName": "default.png"
+    "Word": "Laboratory",
+    "Category": "Education",
+    "Description": "A room or space equipped for scientific experiments and research.",
+    "ImageName": "laboratory.jpg"
   },
   {
-    "Word": "Munte",
-    "Category": "Geografie",
-    "Description": "Forma de relief mare si inalta, mai inalta decat un deal.",
-    "ImageName": "munte.png"
+    "Word": "Mountain",
+    "Category": "Geography",
+    "Description": "A large and high landform, higher than a hill.",
+    "ImageName": "mountain.jpg"
   },
   {
-    "Word": "Rau",
-    "Category": "Geografie",
-    "Description": "Curs de apa natural, care se varsa intr-o alta apa.",
-    "ImageName": "rau.png"
+    "Word": "River",
+    "Category": "Geography",
+    "Description": "A natural stream of water flowing into another body of water.",
+    "ImageName": "river.jpg"
   },
   {
-    "Word": "Insula",
-    "Category": "Geografie",
-    "Description": "Portiune de pamant inconjurata de apa pe toate partile.",
-    "ImageName": "insula.png"
+    "Word": "Island",
+    "Category": "Geography",
+    "Description": "A piece of land surrounded by water on all sides.",
+    "ImageName": "island.jpg"
   },
   {
     "Word": "Desert",
-    "Category": "Geografie",
-    "Description": "Zona arida cu precipitatii foarte scazute.",
-    "ImageName": "desert.png"
+    "Category": "Geography",
+    "Description": "An arid area with very low precipitation.",
+    "ImageName": "desert.jpg"
   },
   {
     "Word": "Ocean",
-    "Category": "Geografie",
-    "Description": "Cea mai mare intindere de apa sarata.",
-    "ImageName": "ocean.png"
+    "Category": "Geography",
+    "Description": "The largest body of salt water.",
+    "ImageName": "ocean.jpg"
   },
   {
-    "Word": "Bucatar",
-    "Category": "Meserii",
-    "Description": "Persoana care pregateste mancare intr-un cadru profesional.",
-    "ImageName": "bucatar.png"
+    "Word": "Chef",
+    "Category": "Professions",
+    "Description": "A person who prepares food in a professional setting.",
+    "ImageName": "chef.jpg"
   },
   {
     "Word": "Pilot",
-    "Category": "Meserii",
-    "Description": "Persoana care conduce avioane.",
-    "ImageName": "pilot.png"
+    "Category": "Professions",
+    "Description": "A person who flies airplanes.",
+    "ImageName": "pilot.jpg"
   },
   {
-    "Word": "Arhitect",
-    "Category": "Meserii",
-    "Description": "Persoana care proiecteaza cladiri si supravegheaza constructia lor.",
+    "Word": "Architect",
+    "Category": "Professions",
+    "Description": "A person who designs buildings and oversees their construction.",
+    "ImageName": "architect.jpg"
+  },
+  {
+    "Word": "Engineer",
+    "Category": "Professions",
+    "Description": "A professional in applying scientific principles to design and development.",
+    "ImageName": "engineer.jpg"
+  },
+  {
+    "Word": "Photographer",
+    "Category": "Professions",
+    "Description": "A person who takes photographs as a profession.",
+    "ImageName": "photographer.jpg"
+  },
+  {
+    "Word": "Iron",
+    "Category": "Chemical Elements",
+    "Description": "A metal used in construction and industry, symbol Fe.",
     "ImageName": "default.png"
   },
   {
-    "Word": "Inginer",
-    "Category": "Meserii",
-    "Description": "Profesionist in aplicarea principiilor stiintifice la design si dezvoltare.",
-    "ImageName": "default.png"
-  },
-  {
-    "Word": "Fotograf",
-    "Category": "Meserii",
-    "Description": "Persoana care face fotografii ca profesie.",
-    "ImageName": "fotograf.png"
-  },
-  {
-    "Word": "Fier",
-    "Category": "Elemente chimice",
-    "Description": "Metal utilizat in constructii si industrie, simbol Fe.",
-    "ImageName": "fier.png"
-  },
-  {
-    "Word": "Oxigen",
-    "Category": "Elemente chimice",
-    "Description": "Element chimic esential pentru respiratie, simbol O.",
+    "Word": "Oxygen",
+    "Category": "Chemical Elements",
+    "Description": "An essential element for breathing, symbol O.",
     "ImageName": "default.png"
   },
   {
     "Word": "Carbon",
-    "Category": "Elemente chimice",
-    "Description": "Element chimic prezent in toate formele de viata, simbol C.",
-    "ImageName": "carbon.png"
+    "Category": "Chemical Elements",
+    "Description": "An element present in all life forms, symbol C.",
+    "ImageName": "default.png"
   },
   {
-    "Word": "Aur",
-    "Category": "Elemente chimice",
-    "Description": "Metal pretios, galben, utilizat in bijuterii si electronica, simbol Au.",
-    "ImageName": "aur.png"
+    "Word": "Gold",
+    "Category": "Chemical Elements",
+    "Description": "A precious metal, yellow, used in jewelry and electronics, symbol Au.",
+    "ImageName": "gold.jpg"
   },
   {
-    "Word": "Hidrogen",
-    "Category": "Elemente chimice",
-    "Description": "Cel mai usor si mai abundent element chimic, simbol H.",
+    "Word": "Hydrogen",
+    "Category": "Chemical Elements",
+    "Description": "The lightest and most abundant chemical element, symbol H.",
     "ImageName": "default.png"
   },
   {
     "Word": "Opera",
-    "Category": "Arta",
-    "Description": "Forma de teatru in care muzica are rol principal.",
-    "ImageName": "opera.png"
+    "Category": "Art",
+    "Description": "A form of theater where music has a principal role.",
+    "ImageName": "opera.jpg"
   },
   {
-    "Word": "Sculptura",
-    "Category": "Arta",
-    "Description": "Arta de a crea figuri sau obiecte in trei dimensiuni.",
-    "ImageName": "sculptura.png"
+    "Word": "Sculpture",
+    "Category": "Art",
+    "Description": "The art of creating figures or objects in three dimensions.",
+    "ImageName": "sculpture.jpg"
   }
 ]

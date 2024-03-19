@@ -1,22 +1,12 @@
 {
   "users": [
     {
-      "username": "Laura",
-      "password": "Laura",
+      "username": "User",
+      "password": "asas",
       "isAdmin": true
     },
     {
-      "username": "David",
-      "password": "asas",
-      "isAdmin": false
-    },
-    {
-      "username": "Alexia",
-      "password": "asas",
-      "isAdmin": false
-    },
-    {
-      "username": "Catalin",
+      "username": "User2",
       "password": "asas",
       "isAdmin": false
     }
