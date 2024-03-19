@@ -1,9 +1,5 @@
 ﻿using System.Windows;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Dictionary
@@ -32,8 +28,8 @@ namespace Dictionary
 
         public MainViewModel()
         {
-            AddWordCommand = new RelayCommand(() => ExecuteAddWordCommand()); // Presupunem că există o metodă CanExecuteAddWordCommand
-            PlayCommand = new RelayCommand(() => ExecutePlayCommand()); // Presupunând că aceste metode există
+            AddWordCommand = new RelayCommand(() => ExecuteAddWordCommand());
+            PlayCommand = new RelayCommand(() => ExecutePlayCommand());
             LogOutCommand = new RelayCommand(() => ExecuteLogOutCommand());
             SearchWordCommand = new RelayCommand(() => ExecuteSearchWordCommand());
         }
@@ -45,7 +41,6 @@ namespace Dictionary
             {
                 AddWordWindow addWordWindow = new AddWordWindow();
                 addWordWindow.Show();
-                //Application.Current.MainWindow.Close();
             });
         }
 
@@ -55,7 +50,6 @@ namespace Dictionary
             {
                 PlayWindow playWindow = new PlayWindow();
                 playWindow.Show();
-                //Application.Current.MainWindow.Close();
             });
         }
 
@@ -75,7 +69,6 @@ namespace Dictionary
             {
                 SearchWordWindow searchWordWindow = new SearchWordWindow();
                 searchWordWindow.Show();
-                //Application.Current.MainWindow.Close();
             });
         }
 

@@ -10,7 +10,7 @@ namespace Dictionary
             InitializeComponent();
             Application.Current.MainWindow = this;
             this.DataContext = new MainViewModel();
-            this.IsUserAdmin = ApplicationState.IsUserAdmin; // Utilizează starea globală pentru a seta dacă utilizatorul este admin
+            this.IsUserAdmin = ApplicationState.IsUserAdmin; // Use the ApplicationState to get the user's admin status
         }
 
     }

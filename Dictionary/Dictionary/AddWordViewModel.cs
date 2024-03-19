@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Windows.Input;
 using System.Windows;
 using Newtonsoft.Json;
-using Microsoft.Win32; // Necesar pentru OpenFileDialog
+using Microsoft.Win32;
 using System.IO;
 
 namespace Dictionary
@@ -90,7 +90,6 @@ namespace Dictionary
 
                     if (!isPhrase)
                     {
-                        // Reset Category when switching back to the list view
                         Category = null;
                     }
                 }
@@ -137,15 +136,11 @@ namespace Dictionary
                     string newJson = JsonConvert.SerializeObject(words, Formatting.Indented);
                     File.WriteAllText(filePath, newJson);
 
-                    // Adaugă categoria nouă în lista de categorii, dacă nu există deja
                     if (!Categories.Contains(Category))
                     {
                         Categories.Add(Category);
-                        // Aici ar trebui să te asiguri că lista de categorii din UI este actualizată
                         OnPropertyChanged(nameof(Categories));
                     }
-
-                    // Resetează formularul
                     ResetForm();
 
                     MessageBox.Show("Word added successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -165,8 +160,7 @@ namespace Dictionary
             Word = string.Empty;
             Description = string.Empty;
             ImageName = null;
-            IsPhrase = false; // Reset this if necessary
-                              // Do not clear the categories list or selected category to allow for quick additions
+            IsPhrase = false;
         }
 
         private void SelectImage()
@@ -179,21 +173,18 @@ namespace Dictionary
 
             if (openFileDialog.ShowDialog() == true)
             {
-                // Acesta este directorul bin\Debug sau bin\Release
                 string projectDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                string relativePath = @"..\..\Images\"; // Ajustează aceasta conform structurii proiectului tău
+                string relativePath = @"..\..\Images\";
                 string targetPath = Path.Combine(projectDirectory, relativePath);
-
-                // Verifică și creează directorul dacă nu există
                 Directory.CreateDirectory(targetPath);
 
                 string sourceFilePath = openFileDialog.FileName;
                 string destFilePath = Path.Combine(targetPath, Path.GetFileName(sourceFilePath));
 
-                // Copiază fișierul în directorul țintă, suprascriindu-l dacă există deja
+                // Copy the file to the target directory
                 File.Copy(sourceFilePath, destFilePath, true);
 
-                // Actualizează proprietatea ImageName pentru a reflecta calea relativă sau numele fișierului pentru imaginea selectată
+                // Update the ImageName property
                 ImageName = Path.GetFileName(sourceFilePath);
             }
         }
@@ -202,7 +193,6 @@ namespace Dictionary
         {
             Application.Current.Dispatcher.Invoke(() =>
             {
-                // Închide fereastra curentă
                 foreach (Window window in Application.Current.Windows)
                 {
                     if (window is AddWordWindow)
@@ -217,7 +207,7 @@ namespace Dictionary
         private void LoadCategories()
         {
             Categories.Clear();
-            string filePath = @"..\..\Data\words.json"; // Ajustează acest cale conform nevoilor tale
+            string filePath = @"..\..\Data\words.json";
             if (File.Exists(filePath))
             {
                 string json = File.ReadAllText(filePath);

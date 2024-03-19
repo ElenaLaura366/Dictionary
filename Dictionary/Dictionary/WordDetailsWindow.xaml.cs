@@ -1,13 +1,7 @@
-﻿using System;
-using System.Windows;
-using System.Windows.Media.Imaging;
-using System.IO;
+﻿using System.Windows;
 
 namespace Dictionary
 {
-    /// <summary>
-    /// Interaction logic for WordDetailsWindow.xaml
-    /// </summary>
     public partial class WordDetailsWindow : Window
     {
         public WordDetailsWindow()

@@ -62,7 +62,7 @@ namespace Dictionary
                 var items = JsonConvert.DeserializeObject<List<WordItem>>(jsonData) ?? new List<WordItem>();
                 var categories = items.Select(item => item.Category).Distinct().OrderBy(c => c);
                 Categories.Clear();
-                Categories.Add("All Categories"); // Adăugăm categoria implicită
+                Categories.Add("All Categories"); // Add a default category
                 foreach (var category in categories)
                 {
                     Categories.Add(category);

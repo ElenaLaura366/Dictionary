@@ -75,7 +75,7 @@ namespace Dictionary
         private void ShowMainWindow()
         {
             var mainWindow = new MainWindow();
-            mainWindow.DataContext = new MainViewModel { IsUserAdmin = this.IsUserAdmin }; // Transmite informația că utilizatorul este admin
+            mainWindow.DataContext = new MainViewModel { IsUserAdmin = this.IsUserAdmin }; // Transfer the user's admin status to the MainViewModel
             mainWindow.Show();
             CloseLoginWindow();
         }
@@ -120,7 +120,7 @@ namespace Dictionary
         private string GetFilePath()
         {
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory; // This is the bin\Debug or bin\Release directory
-            string relativePath = @"..\..\Data\users.json"; // Adjust this according to your project's structure
+            string relativePath = @"..\..\Data\users.json";
             string fullPath = Path.GetFullPath(Path.Combine(baseDirectory, relativePath));
             return fullPath;
         }

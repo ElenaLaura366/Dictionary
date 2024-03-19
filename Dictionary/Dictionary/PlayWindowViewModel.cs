@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
-using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using Newtonsoft.Json;
@@ -45,7 +44,7 @@ namespace Dictionary
             BackCommand = new RelayCommand(o => CloseAction?.Invoke());
         }
 
-        private void LoadWords()
+        private void LoadWords() // Load the words from the JSON file
         {
             string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Data\\words.json");
             var json = File.ReadAllText(fullPath);
@@ -69,7 +68,7 @@ namespace Dictionary
             } while (usedWords.Contains(newItem));
 
             currentWordItem = newItem;
-            usedWords.Add(newItem); // add the new word to the list of used words
+            usedWords.Add(newItem); // Add the new word to the list of used words
 
             CurrentWord = currentWordItem.Word;
 
@@ -85,7 +84,7 @@ namespace Dictionary
             {
                 string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Images\\", currentWordItem.ImageName);
                 CurrentImagePath = imagePath;
-                CurrentDescription = string.Empty; // Resetează câmpul de descriere
+                CurrentDescription = string.Empty; // Reset the description
             }
             else
             {
@@ -110,8 +109,8 @@ namespace Dictionary
             }
             StartNewRound(); // Start a new round
             OnPropertyChanged(nameof(ScoreText)); // Update the score
-            UserInput = string.Empty; // Resetează câmpul de introducere
-            OnPropertyChanged(nameof(UserInput)); // Actualizează interfața pentru a reflecta modificarea
+            UserInput = string.Empty; // Reset the user input
+            OnPropertyChanged(nameof(UserInput)); // Update the UI
         }
 
         protected virtual void OnPropertyChanged(string propertyName)
