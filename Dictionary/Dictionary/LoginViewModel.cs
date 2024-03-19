@@ -64,7 +64,7 @@ namespace Dictionary
             {
                 MessageBox.Show("Login successful!");
                 IsUserAdmin = user.isAdmin;
-                ApplicationState.IsUserAdmin = user.isAdmin;
+                SessionManager.Instance.IsUserAdmin = user.isAdmin; // Modificare aici
                 ShowMainWindow();
             }
             else
@@ -72,6 +72,7 @@ namespace Dictionary
                 MessageBox.Show("Invalid username or password.");
             }
         }
+
         private void ShowMainWindow()
         {
             var mainWindow = new MainWindow();

@@ -10,12 +10,19 @@ namespace Dictionary
             InitializeComponent();
             Application.Current.MainWindow = this;
             this.DataContext = new MainViewModel();
-            this.IsUserAdmin = ApplicationState.IsUserAdmin; // Use the ApplicationState to get the user's admin status
+            this.IsUserAdmin = SessionManager.Instance.IsUserAdmin;
         }
-
     }
-    public static class ApplicationState
+    public class SessionManager
     {
-        public static bool IsUserAdmin { get; set; } = false;
+        public bool IsUserAdmin { get; set; } = false;
+
+        // Singleton instance
+        private static SessionManager instance;
+        public static SessionManager Instance => instance ?? (instance = new SessionManager());
+
+        // Constructor privat pentru a preveni instanțierea externă
+        private SessionManager() { }
     }
+
 }
