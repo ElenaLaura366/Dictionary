@@ -20,9 +20,9 @@ Access: Requires authentication with a predefined username and password.
 
 Functions:
 
-**Add Words**: Insert new words into the dictionary complete with descriptions, categories, and optional images.  
-**Edit Words**: Update existing word entries, modifying their descriptions, categories, or images.  
-**Delete Words**: Remove word entries from the dictionary.
+**Add Words**: Insert new words into the dictionary complete with descriptions, categories, and optional images.
+
+![Add word if you are administrator](/repostoryImages/addword.png)
 
 ### Word Search Module
 
@@ -32,6 +32,8 @@ This module enables users to search for words based on categories or freely. Fea
 **Autocomplete Search**: As users type in the search box, suggestions will appear, enhancing the user experience.  
 **Word Display**: Upon selection, the application displays the word, its description, category, and an associated image (if available).
 
+![Search word module](/repostoryImages/search.png)
+
 ### Entertainment Module
 
 This interactive game challenges users to guess words based on given descriptions or images. Features include:
@@ -39,6 +41,8 @@ This interactive game challenges users to guess words based on given description
 **Random Word Selection**: Each game round selects five random words from the dictionary.  
 **Clues**: Users receive either a description or an image as a clue for the word.  
 **Feedback**: After each guess, users are informed if their answer was correct or incorrect, with the correct answer provided for incorrect guesses.
+
+![Play game module](/repostoryImages/game.png)
 
 ## Authentication and Registration
 
@@ -50,6 +54,8 @@ Before using the Explanatory Dictionary application, new users need to register.
 2. Fill in the required fields with your details.  
 3. Submit your registration details by clicking the ‘Register’ button.
 
+![Register](/repostoryImages/register.png)
+
 After registering, you can now log in using your credentials.
 
 ### Authentication
@@ -59,3 +65,6 @@ To access the full features of the Explanatory Dictionary, you must log in. Foll
 1. Open the application and navigate to the login screen.  
 2. Enter your registered username and password.  
 3. Click the ‘Login’ button to authenticate.
+
+![Login](/repostoryImages/login.png)
+
